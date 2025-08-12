@@ -1,0 +1,113 @@
+<html>
+<head>
+    <title>Registration</title>
+    <style>
+       body {
+            font-family: Arial;
+            background: lavender;
+            text-align: center;
+            display: flex;      
+           }
+        .container {
+            width: 500px;
+            background:lightblue;
+            margin: auto;
+            padding: 20px;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            margin: 10px 0;
+           
+        }
+        button {
+            width: 100%;
+            margin: 10px 0;
+            background: lightcoral ;
+            padding: 10px;
+ 
+     }
+    .group {
+        display: flex;
+    	gap: 20px; 
+    	align-items: center;
+    	
+  }
+  label {
+     	display: flex;
+     	align-items: center;
+        
+  }
+ .list{
+     width: 100%;
+     padding: 8px;
+  }
+  </style>
+</head>
+<body>
+
+ <div class="container">
+   <h2 style="color: #2563eb">Tech Registration</h2>
+   <form id="signupForm">
+     <label style="font-weight:bold">Full Name</label>
+     <input type="text" name="fullname"  required><br>
+
+    <label style="font-weight:bold" >Email</label>
+    <input type="text" name="email"  required><br>
+
+
+    <label style="font-weight:bold">Phone Number</label>
+    <input type="text" name="phone"  required><br>
+
+
+    <label style="font-weight:bold">College Name</label>
+    <input type="text" name="college"  required><br>
+
+
+    <label style="font-weight:bold">Branch</label>
+     <input type="text" name="Branch"  required><br>
+    
+    <label style="font-weight:bold">Date of Birth</label>
+    <input type="date" name="dob" required>
+
+    <label style="font-weight:bold">Address</label>
+    <textarea name="address" rows="3" cols="65" required></textarea><br><br>
+
+    <label style="font-weight:bold">Gender: </label>
+    <div class="group">
+      <label><input type="radio" name="gender" value="Male" required > Male</label>
+      <label><input type="radio" name="gender" value="Female" > Female</label>
+      <label><input type="radio" name="gender" value="Other" > Other</label>
+    </div><br>
+
+    <label style="font-weight:bold">Year of Study:</label>
+    <div class="group">
+      <label><input type="radio" name="year" value="1st Year" required> 1st</label>
+      <label><input type="radio" name="year" value="2nd Year"> 2nd</label>
+      <label><input type="radio" name="year" value="3rd Year"> 3rd</label>
+      <label><input type="radio" name="year" value="4th Year"> 4th</label>
+    </div><br>
+
+    <label style="font-weight:bold">Programming Languages Known: </label>
+    <div class="group">
+      <label><input type="checkbox" name="lang" value="C" required >C </label>
+      <label><input type="checkbox" name="lang" value="C++" >C++ </label>
+      <label><input type="checkbox" name="lang" value="Java" >Java </label>
+      <label><input type="checkbox" name="lang" value="Python" >Python </label>
+    </div><br>
+
+    </select><br><br>
+
+    
+</div>
+</body>
+</html>    <button type="reset">Reset</button><br>
+    <button type="submit">Register</button>
+  </form>
+      <option value="hackathon">Hackathon</option>
+      <option value="techquiz">Tech Quiz</option>
+      <option value="aiworkshop">AI Workshop</option>
+    <label style="font-weight:bold">Select Event:</label><br>
+    <select class="list" required>
+      <option value="">-- Choose an event --</option>
+
